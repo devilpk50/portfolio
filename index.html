@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Prashant Kumar Thakur - Portfolio</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=JetBrains+Mono:wght@500&family=Caveat:wght@600&display=swap"
+                rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet">
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "surface-tint": "#ffb3b0",
+                                                "primary-fixed": "#ffdad8",
+                                                "on-tertiary-fixed": "#1c1b1b",
+                                                "tertiary-fixed-dim": "#c8c6c5",
+                                                "surface-variant": "#353535",
+                                                "tertiary-container": "#626161",
+                                                "on-surface": "#e5e2e1",
+                                                "surface-dim": "#131313",
+                                                "secondary-container": "#454747",
+                                                "surface-container-highest": "#353535",
+                                                "tertiary-fixed": "#e5e2e1",
+                                                "surface-container": "#20201f",
+                                                "on-primary-fixed": "#410006",
+                                                "primary-container": "#be1e2d",
+                                                "on-error-container": "#ffdad6",
+                                                "secondary-fixed-dim": "#c6c6c7",
+                                                "surface-container-lowest": "#0e0e0e",
+                                                "error": "#ffb4ab",
+                                                "surface-bright": "#393939",
+                                                "inverse-primary": "#b91a2a",
+                                                "on-primary-fixed-variant": "#930019",
+                                                "on-error": "#690005",
+                                                "outline-variant": "#5b403f",
+                                                "on-tertiary-fixed-variant": "#474646",
+                                                "surface-container-low": "#1c1b1b",
+                                                "on-primary-container": "#ffd3d1",
+                                                "on-tertiary-container": "#e0dcdc",
+                                                "on-secondary-fixed-variant": "#454747",
+                                                "on-primary": "#68000f",
+                                                "surface-container-high": "#2a2a2a",
+                                                "inverse-on-surface": "#313030",
+                                                "on-secondary": "#2f3131",
+                                                "secondary": "#c6c6c7",
+                                                "inverse-surface": "#e5e2e1",
+                                                "on-surface-variant": "#e3bebb",
+                                                "on-tertiary": "#313030",
+                                                "tertiary": "#c8c6c5",
+                                                "surface": "#131313",
+                                                "secondary-fixed": "#e2e2e2",
+                                                "primary-fixed-dim": "#ffb3b0",
+                                                "on-secondary-container": "#b4b5b5",
+                                                "primary": "#ffb3b0",
+                                                "background": "#131313",
+                                                "outline": "#aa8987",
+                                                "on-secondary-fixed": "#1a1c1c",
+                                                "on-background": "#e5e2e1",
+                                                "error-container": "#93000a"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.125rem",
+                                                "lg": "0.25rem",
+                                                "xl": "0.5rem",
+                                                "full": "0.75rem"
+                                        },
+                                        "spacing": {
+                                                "margin-x": "64px",
+                                                "container-max": "1440px",
+                                                "grid-column-count": "12",
+                                                "section-gap": "120px",
+                                                "stack-sm": "8px",
+                                                "stack-lg": "48px",
+                                                "stack-md": "24px",
+                                                "gutter": "24px"
+                                        },
+                                        "fontFamily": {
+                                                "body-lg": [
+                                                        "Lora"
+                                                ],
+                                                "headline-lg": [
+                                                        "Playfair Display"
+                                                ],
+                                                "display-hero": [
+                                                        "Playfair Display"
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "Playfair Display"
+                                                ],
+                                                "body-sm": [
+                                                        "Lora"
+                                                ],
+                                                "section-title": [
+                                                        "Playfair Display"
+                                                ],
+                                                "label-mono": [
+                                                        "JetBrains Mono"
+                                                ],
+                                                "signature": [
+                                                        "Caveat"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "84px",
+                                                        {
+                                                                "lineHeight": "80px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "display-hero": [
+                                                        "220px",
+                                                        {
+                                                                "lineHeight": "180px",
+                                                                "letterSpacing": "-0.04em",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "headline-lg-mobile": [
+                                                        "48px",
+                                                        {
+                                                                "lineHeight": "44px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-sm": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "22px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "section-title": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-mono": [
+                                                        "12px",
+                                                        {
+                                                                "lineHeight": "16px",
+                                                                "letterSpacing": "0.1em",
+                                                                "fontWeight": "500"
+                                                        }
+                                                ]
+                                        }
+                                }
+                        }
+                }
+        </script>
+        <style>
+                .stroke-text {
+                        -webkit-text-stroke: 1px rgba(190, 30, 45, 0.3);
+                        color: transparent;
+                }
+
+                .hero-bg-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 0;
+                        white-space: nowrap;
+                        opacity: 0.8;
+                        color: #be1e2d;
+                        /* primary-container */
+                }
+        </style>
+</head>
+
+<body
+        class="bg-background text-on-background font-body-lg overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+        <!-- TopNavBar -->
+        <nav
+                class="bg-background dark:bg-background docked full-width top-0 border-b border-white/10 flat no shadows flex justify-between items-center w-full px-5 md:px-margin-x py-6 max-w-container-max mx-auto z-50 relative">
+                <div class="flex items-center gap-6 z-[60] relative">
+                        <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                </svg>
+                        </a>
+                        <a href="https://github.com/devilpk50" aria-label="GitHub" target="_blank" class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                </svg>
+                        </a>
+                        <a href="mailto:prashant.mca25@gmail.com" aria-label="Email" class="text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center">
+                                <span class="material-symbols-outlined text-[24px]">mail</span>
+                        </a>
+                </div>
+                <div class="hidden md:flex gap-8">
+                </div>
+                <div class="hidden md:flex items-center gap-2 text-on-surface-variant">
+                        <span class="font-label-mono uppercase text-[10px] tracking-widest">AVAILABLE FOR
+                                FREELANCE</span>
+                        <span class="material-symbols-outlined text-primary text-sm ml-2">emergency</span>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-primary z-[60] relative">
+                        <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+        </nav>
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu"
+                class="fixed inset-0 bg-background/95 backdrop-blur z-[55] flex flex-col items-center justify-center hidden opacity-0 transition-opacity duration-300">
+                <div class="flex flex-col items-center gap-8 mt-12">
+                        <a class="mobile-link text-3xl font-label-mono uppercase text-primary border-b border-primary"
+                                href="#">Projects</a>
+                        <a class="mobile-link text-3xl font-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Process</a>
+                        <a class="mobile-link text-3xl font-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Skills</a>
+                        <a class="mobile-link text-3xl font-label-mono uppercase text-on-surface-variant hover:text-primary transition-colors"
+                                href="#">Contact</a>
+                </div>
+        </div>
+        <!-- Hero Section -->
+        <header
+                class="relative min-h-[85vh] flex items-center justify-center overflow-hidden max-w-container-max mx-auto">
+                <div
+                        class="hero-bg-text font-display-hero text-7xl sm:text-[150px] md:text-[300px] leading-none pointer-events-none select-none text-primary-container/80 tracking-tighter w-full text-center">
+                        PORTFOLIO</div>
+                <div
+                        class="absolute inset-0 z-10 flex items-end justify-center md:justify-end md:pr-10 lg:pr-24 xl:pr-32 pointer-events-none">
+                        <img alt="Prashant Thakur"
+                                class="w-full max-w-[800px] object-contain object-bottom max-h-[95vh] h-auto opacity-90 filter drop-shadow-2xl"
+                                data-alt="Prashant Thakur" src="./profile.png">
+                </div>
+                <div
+                        class="relative z-20 w-full h-full flex flex-col justify-between px-5 md:px-margin-x py-12 container mx-auto pointer-events-none">
+                        <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mt-8 md:mt-16">
+                                <div class="col-span-1 md:col-span-6 flex flex-col justify-center pointer-events-auto">
+                                        <p class="font-body-lg italic text-on-surface-variant text-xl mb-4 ml-2">Hello,
+                                                I'm</p>
+                                        <h1
+                                                class="font-display-hero text-7xl sm:text-[90px] md:text-[150px] leading-[0.85] text-on-background tracking-tighter uppercase mb-6 drop-shadow-lg">
+                                                PRASHANT<br>THAKUR</h1>
+                                        <h2 class="font-section-title text-primary uppercase max-w-sm mb-6">SOFTWARE
+                                                DEVELOPER</h2>
+                                        <p class="font-body-lg text-on-surface-variant max-w-md mb-8 leading-relaxed">
+                                                Seeking a job as a software developer where I can use my coding skills
+                                                to build impactful software solutions. Passionate about clean code,
+                                                robust logic, and details that make a difference.
+                                        </p>
+                                        <div class="flex items-center gap-2 text-on-surface-variant">
+                                                <span class="material-symbols-outlined text-primary">location_on</span>
+                                                <span class="font-label-mono text-label-mono uppercase">BENGALURU,
+                                                        KARNATAKA</span>
+                                        </div>
+                                        <div class="mt-8">
+                                                <a href="assets/Prashant_Thakur_Resume.pdf" download="Prashant_Thakur_Resume.pdf" class="inline-flex items-center gap-3 px-6 py-3 border border-primary text-primary font-label-mono uppercase tracking-widest hover:bg-primary hover:text-background transition-colors rounded-sm">
+                                                        <span class="material-symbols-outlined text-lg">download</span>
+                                                        Download Resume
+                                                </a>
+                                        </div>
+                                </div>
+                                <div
+                                        class="col-span-1 md:col-span-6 flex flex-col justify-start md:justify-end items-start md:items-end pb-12 mt-12 md:mt-0 pointer-events-auto">
+                                        <div class="flex items-center gap-4 mb-12 md:mb-16 md:mr-12">
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary">
+                                                        <span class="material-symbols-outlined text-sm">emergency</span>
+                                                </div>
+                                                <p class="font-body-sm text-on-surface-variant max-w-[150px]">Building
+                                                        scalable solutions with clean code.</p>
+                                        </div>
+                                        <div class="flex flex-col gap-8 mr-12">
+                                                <div class="flex items-center gap-6">
+                                                        <span class="font-headline-lg text-primary">5+</span>
+                                                        <span
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase w-20">YEARS<br>CODING</span>
+                                                </div>
+                                                <div class="flex items-center gap-6">
+                                                        <span class="font-headline-lg text-primary">3</span>
+                                                        <span
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase w-20">MAJOR<br>PROJECTS</span>
+                                                </div>
+                                                <div class="flex items-center gap-6">
+                                                        <span class="font-headline-lg text-primary">5+</span>
+                                                        <span
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase w-20">CERTIFICATIONS<br>EARNED</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </header>
+        <!-- Selected Projects -->
+        <section
+                class="py-section-gap px-5 md:px-margin-x max-w-container-max mx-auto border-t border-white/10 relative">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-16 gap-6">
+                        <h2
+                                class="font-section-title text-on-background uppercase flex items-center gap-8 w-full md:w-auto">
+                                SELECTED PROJECTS
+                                <span class="hidden md:block h-[1px] bg-white/10 flex-grow min-w-[200px]"></span>
+                        </h2>
+                        <a class="font-label-mono text-label-mono text-on-surface-variant uppercase flex items-center gap-2 hover:text-primary transition-colors"
+                                href="#">
+                                VIEW ALL PROJECTS <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+                        </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                        <!-- Project 1 -->
+                        <a href="https://github.com/devilpk50/vastrarevival" target="_blank" class="group cursor-pointer block">
+                                <div class="aspect-video bg-surface-container overflow-hidden mb-6 relative flex items-center justify-center">
+                                        <img alt="Veloce Bikes"
+                                                class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                                                data-alt="A sleek dark-mode web application interface for a clothing and fashion brand named Vastra."
+                                                src="assets/vastra.jpg">
+                                </div>
+                                <div class="flex items-start justify-between">
+                                        <div class="flex gap-4">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary leading-none">01</span>
+                                                <div>
+                                                        <h3
+                                                                class="font-section-title text-on-background uppercase mb-1 group-hover:text-primary transition-colors">
+                                                                VASTRA-REVIVAL</h3>
+                                                        <p
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase">
+                                                                FULL-STACK MERN APP</p>
+                                                </div>
+                                        </div>
+                                        <span
+                                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors -rotate-45">arrow_forward</span>
+                                </div>
+                        </a>
+                        <!-- Project 2 -->
+                        <a href="https://github.com/devilpk50/Medec_nepal" target="_blank" class="group cursor-pointer block">
+                                <div class="aspect-video bg-[#e6e2db] overflow-hidden mb-6 relative flex items-center justify-center">
+                                        <img alt="Service Provider System"
+                                                class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                                                data-alt="A professional clean web dashboard interface for a medical and healthcare service provider."
+                                                src="assets/medec.jpg">
+                                </div>
+                                <div class="flex items-start justify-between">
+                                        <div class="flex gap-4">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary leading-none">02</span>
+                                                <div>
+                                                        <h3
+                                                                class="font-section-title text-on-background uppercase mb-1 group-hover:text-primary transition-colors">
+                                                                MEDEC NEPAL</h3>
+                                                        <p
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase">
+                                                                SERVICE PROVIDER APP</p>
+                                                </div>
+                                        </div>
+                                        <span
+                                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors -rotate-45">arrow_forward</span>
+                                </div>
+                        </a>
+                        <!-- Project 3 -->
+                        <a href="https://github.com/devilpk50/BMSCE-HACK-EVEREST-AI-POWERED-CIVIC-TRACKER" target="_blank" class="group cursor-pointer block">
+                                <div class="aspect-video bg-surface-container overflow-hidden mb-6 relative flex items-center justify-center">
+                                        <img alt="Handicraft Management System"
+                                                class="w-auto h-auto max-w-full max-h-full object-contain transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                                                data-alt="A futuristic AI-powered web application dashboard for a civic tracking system."
+                                                src="assets/everest.jpg">
+                                </div>
+                                <div class="flex items-start justify-between">
+                                        <div class="flex gap-4">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary leading-none">03</span>
+                                                <div>
+                                                        <h3
+                                                                class="font-section-title text-on-background uppercase mb-1 group-hover:text-primary transition-colors">
+                                                                EVEREST CIVIC TRACKER</h3>
+                                                        <p
+                                                                class="font-label-mono text-label-mono text-on-surface-variant uppercase">
+                                                                AI-POWERED WEB APP</p>
+                                                </div>
+                                        </div>
+                                        <span
+                                                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors -rotate-45">arrow_forward</span>
+                                </div>
+                        </a>
+                </div>
+        </section>
+        <!-- Education & Process Section -->
+        <section
+                class="py-section-gap px-5 md:px-margin-x max-w-container-max mx-auto border-t border-white/10 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <!-- Left Column: Education & Skills -->
+                        <div class="col-span-1 lg:col-span-4 flex flex-col gap-12">
+                                <h2 class="font-section-title text-on-background uppercase text-3xl">EDUCATION &amp;
+                                        SKILLS</h2>
+                                <div>
+                                        <h3 class="font-label-mono text-primary uppercase tracking-widest mb-6">
+                                                EDUCATION</h3>
+                                        <div class="flex justify-between items-start mb-6">
+                                                <div>
+                                                        <p class="font-body-lg text-on-background font-bold mb-1">
+                                                                Master's in Computer Applications (MCA)</p>
+                                                        <p class="font-body-sm text-on-surface-variant">BMS College of
+                                                                Engineering</p>
+                                                </div>
+                                                <span class="font-label-mono text-primary tracking-widest text-right">2025
+                                                        - ONGOING<br><span
+                                                                class="text-on-surface-variant text-[10px]">CGPA:
+                                                                7.7</span></span>
+                                        </div>
+                                        <div class="flex justify-between items-start">
+                                                <div>
+                                                        <p class="font-body-lg text-on-background font-bold mb-1">
+                                                                Bachelor's in Computer Application (BCA)</p>
+                                                        <p class="font-body-sm text-on-surface-variant">Ratna Rajyalaxmi
+                                                                Campus</p>
+                                                </div>
+                                                <span class="font-label-mono text-primary tracking-widest text-right">2019
+                                                        - 2024<br><span
+                                                                class="text-on-surface-variant text-[10px]">CGPA:
+                                                                3.34</span></span>
+                                        </div>
+                                </div>
+                                <div>
+                                        <h3 class="font-label-mono text-primary uppercase tracking-widest mb-6">SKILLS</h3>
+                                        <div class="flex flex-col gap-6">
+                                                <!-- Frontend -->
+                                                <div>
+                                                        <h4 class="font-body-sm text-on-surface-variant mb-3 uppercase tracking-wider text-xs">Frontend</h4>
+                                                        <div class="flex flex-wrap gap-2">
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">HTML / CSS</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">JAVASCRIPT</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">REACT</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">BOOTSTRAP</span>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Backend -->
+                                                <div>
+                                                        <h4 class="font-body-sm text-on-surface-variant mb-3 uppercase tracking-wider text-xs">Backend</h4>
+                                                        <div class="flex flex-wrap gap-2">
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">NODE.JS</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">EXPRESS.JS</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">JAVA</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">PYTHON</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">PHP</span>
+                                                        </div>
+                                                </div>
+
+                                                <!-- Tools & Database -->
+                                                <div>
+                                                        <h4 class="font-body-sm text-on-surface-variant mb-3 uppercase tracking-wider text-xs">Database & Tools</h4>
+                                                        <div class="flex flex-wrap gap-2">
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">MONGODB</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">MYSQL</span>
+                                                                <span class="px-3 py-1.5 border border-white/20 rounded font-label-mono text-[10px] uppercase text-on-surface-variant hover:border-primary/50 hover:text-primary transition-colors cursor-default">GITHUB</span>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div>
+                                        <h3 class="font-label-mono text-primary uppercase tracking-widest mb-6 mt-12">CERTIFICATES</h3>
+                                        <ul class="flex flex-col gap-4">
+                                                <li class="flex items-start gap-4">
+                                                        <span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified</span>
+                                                        <p class="font-body-sm text-on-surface-variant"><strong class="text-on-background">Computer Hardware and Network Troubleshooting</strong></p>
+                                                </li>
+                                                <li class="flex items-start gap-4">
+                                                        <span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified</span>
+                                                        <p class="font-body-sm text-on-surface-variant"><strong class="text-on-background">Basic Adobe Photoshop Training</strong> &mdash; YALA Institute</p>
+                                                </li>
+                                                <li class="flex items-start gap-4">
+                                                        <span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified</span>
+                                                        <p class="font-body-sm text-on-surface-variant"><strong class="text-on-background">CV Training</strong> &mdash; Leo Club of Kathmandu Alka</p>
+                                                </li>
+                                                <li class="flex items-start gap-4">
+                                                        <span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified</span>
+                                                        <p class="font-body-sm text-on-surface-variant"><strong class="text-on-background">React, JS and NodeJS Basic Training</strong></p>
+                                                </li>
+                                                <li class="flex items-start gap-4">
+                                                        <span class="material-symbols-outlined text-primary-container text-xl mt-0.5">verified</span>
+                                                        <p class="font-body-sm text-on-surface-variant">
+                                                                <a href="https://drive.google.com/file/d/1G_IZ4ota0-6vjjMgb4sd3jS11aUSgMxw/view?usp=sharing" target="_blank" class="text-on-background hover:text-primary transition-colors flex items-center gap-1 group">
+                                                                        <strong>IBM SkillsBuild with AI</strong>
+                                                                        <span class="material-symbols-outlined text-[14px] opacity-0 group-hover:opacity-100 transition-opacity">open_in_new</span>
+                                                                </a>
+                                                        </p>
+                                                </li>
+                                        </ul>
+                                        <a href="https://www.credly.com/users/prashant-kumar-mca25" target="_blank" class="inline-flex items-center gap-2 mt-6 font-label-mono text-label-mono text-primary uppercase hover:text-primary-container transition-colors">
+                                                VIEW BADGES ON CREDLY
+                                                <span class="material-symbols-outlined text-lg">open_in_new</span>
+                                        </a>
+                                </div>
+                        </div>
+                        <!-- Middle Column: Work Process -->
+                        <div
+                                class="col-span-1 lg:col-span-5 flex flex-col gap-12 lg:border-l lg:border-white/10 lg:pl-12">
+                                <h2 class="font-section-title text-on-background uppercase text-3xl">ACHIEVEMENTS & VOLUNTEERING</h2>
+                                <div
+                                        class="flex flex-col relative before:absolute before:inset-y-0 before:left-[45px] before:w-[1px] before:bg-white/10 before:-z-10 gap-12">
+                                        <!-- Step 1 -->
+                                        <div class="flex gap-6 items-start">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary text-3xl pt-2 w-8">01</span>
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-primary/50 bg-background flex items-center justify-center text-on-background shrink-0 mt-2">
+                                                        <span class="material-symbols-outlined text-lg">workspace_premium</span>
+                                                </div>
+                                                <div>
+                                                        <h3
+                                                                class="font-label-mono text-primary uppercase tracking-widest mb-2 mt-3">
+                                                                DISTRICT LEO OF THE YEAR</h3>
+                                                        <p class="font-body-sm text-on-surface-variant">Awarded for the Lionistic Year (L.Y.) 2024/25.</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 2 -->
+                                        <div class="flex gap-6 items-start">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary text-3xl pt-2 w-8">02</span>
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-white/20 bg-background flex items-center justify-center text-on-surface-variant shrink-0 mt-2">
+                                                        <span class="material-symbols-outlined text-lg">diversity_3</span>
+                                                </div>
+                                                <div>
+                                                        <h3
+                                                                class="font-label-mono text-primary uppercase tracking-widest mb-2 mt-3">
+                                                                VICE PRESIDENT</h3>
+                                                        <p class="font-body-sm text-on-surface-variant">Leo Club of Kathmandu Alka (L.Y. 2024/25).</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 3 -->
+                                        <div class="flex gap-6 items-start">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary text-3xl pt-2 w-8">03</span>
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-white/20 bg-background flex items-center justify-center text-on-surface-variant shrink-0 mt-2">
+                                                        <span class="material-symbols-outlined text-lg">campaign</span>
+                                                </div>
+                                                <div>
+                                                        <h3
+                                                                class="font-label-mono text-primary uppercase tracking-widest mb-2 mt-3">
+                                                                DISTRICT BRAND AMBASSADOR</h3>
+                                                        <p class="font-body-sm text-on-surface-variant">Leo District Council 325F (L.Y. 2022/23).</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 4 -->
+                                        <div class="flex gap-6 items-start">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary text-3xl pt-2 w-8">04</span>
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-white/20 bg-background flex items-center justify-center text-on-surface-variant shrink-0 mt-2">
+                                                        <span class="material-symbols-outlined text-lg">volunteer_activism</span>
+                                                </div>
+                                                <div>
+                                                        <h3
+                                                                class="font-label-mono text-primary uppercase tracking-widest mb-2 mt-3">
+                                                                VOLUNTEER</h3>
+                                                        <p class="font-body-sm text-on-surface-variant">Management Association of Nepal — CEO Conference 2022.</p>
+                                                </div>
+                                        </div>
+                                        <!-- Step 5 -->
+                                        <div class="flex gap-6 items-start">
+                                                <span
+                                                        class="font-headline-lg-mobile text-primary text-3xl pt-2 w-8">05</span>
+                                                <div
+                                                        class="w-12 h-12 rounded-full border border-white/20 bg-background flex items-center justify-center text-on-surface-variant shrink-0 mt-2">
+                                                        <span class="material-symbols-outlined text-lg">school</span>
+                                                </div>
+                                                <div>
+                                                        <h3
+                                                                class="font-label-mono text-primary uppercase tracking-widest mb-2 mt-3">
+                                                                CLASS TOPPER</h3>
+                                                        <p class="font-body-sm text-on-surface-variant">1st Semester (BCA) at Ratna Rajyalaxmi Campus.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <!-- Right Column: Quote -->
+                        <div
+                                class="col-span-1 lg:col-span-3 bg-[#690005] p-10 flex flex-col justify-between min-h-[400px]">
+                                <div>
+                                        <span
+                                                class="font-display-hero text-8xl text-primary/40 leading-none h-12 block -ml-2">“</span>
+                                        <p class="font-body-lg text-on-background text-xl leading-relaxed mt-4">
+                                                <strong class="font-bold">Elegant</strong> code is more than logic; it's the invisible foundation of a seamless experience.
+                                        </p>
+                                        <div
+                                                class="font-signature text-5xl text-on-background mt-8 -rotate-3 opacity-90">
+                                                Prashant</div>
+                                </div>
+                                <div class="mt-16">
+                                        <p
+                                                class="font-label-mono text-[10px] tracking-widest uppercase text-on-surface-variant mb-4 max-w-[200px]">
+                                                LET'S CREATE SOMETHING GREAT TOGETHER.</p>
+                                        <span class="material-symbols-outlined text-primary text-2xl">emergency</span>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- Let's Work Together Contact Section -->
+        <section
+                class="py-section-gap px-5 md:px-margin-x max-w-container-max mx-auto border-t border-white/10 relative">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-center">
+                        <!-- Left Column -->
+                        <div class="col-span-1 md:col-span-4 flex flex-col gap-6">
+                                <h2
+                                        class="font-section-title text-[40px] md:text-[56px] leading-tight text-on-background uppercase flex items-start md:items-center gap-2">
+                                        LET'S WORK<br>TOGETHER
+                                        <span class="material-symbols-outlined text-primary text-4xl">flare</span>
+                                </h2>
+                                <p class="font-body-lg text-on-surface-variant max-w-sm">
+                                        I’m currently open for new projects and collaborations as a software developer.
+                                        Let’s build something great.
+                                </p>
+                                <a class="mt-8 flex items-center gap-4 text-primary font-label-mono uppercase hover:text-primary-container transition-colors"
+                                        href="https://linkedin.com" target="_blank">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center">
+                                                <span class="material-symbols-outlined">arrow_forward</span>
+                                        </div>
+                                        AVAILABLE FOR HIRE
+                                </a>
+                        </div>
+                        <!-- Middle Column -->
+                        <div
+                                class="col-span-1 md:col-span-4 flex flex-col gap-8 md:pl-12 pt-12 md:pt-0 border-t md:border-t-0 border-white/10 mt-12 md:mt-0">
+                                <div class="flex items-center gap-6">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-on-surface-variant">
+                                                <span
+                                                        class="material-symbols-outlined text-lg text-primary-container">mail</span>
+                                        </div>
+                                        <a href="mailto:prashant.mca25@gmail.com"
+                                                class="font-body-lg text-on-background hover:text-primary transition-colors">prashant.mca25@gmail.com</a>
+                                </div>
+                                <div class="flex items-center gap-6">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-on-surface-variant">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-primary-container" viewBox="0 0 16 16">
+                                                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                                                </svg>
+                                        </div>
+                                        <a href="https://linkedin.com" target="_blank"
+                                                class="font-body-lg text-on-background hover:text-primary transition-colors">LinkedIn
+                                                Profile</a>
+                                </div>
+                                <div class="flex items-center gap-6">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-on-surface-variant">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-primary-container" viewBox="0 0 16 16">
+                                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                                </svg>
+                                        </div>
+                                        <a href="https://github.com/devilpk50" target="_blank"
+                                                class="font-body-lg text-on-background hover:text-primary transition-colors">GitHub Profile</a>
+                                </div>
+                                <div class="flex items-center gap-6">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-on-surface-variant">
+                                                <span
+                                                        class="material-symbols-outlined text-lg text-primary-container">call</span>
+                                        </div>
+                                        <span class="font-body-lg text-on-background">+91-9155252202</span>
+                                </div>
+                                <div class="flex items-center gap-6">
+                                        <div
+                                                class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center text-on-surface-variant">
+                                                <span
+                                                        class="material-symbols-outlined text-lg text-primary-container">location_on</span>
+                                        </div>
+                                        <span class="font-body-lg text-on-background">Bengaluru, Karnataka</span>
+                                </div>
+                        </div>
+                        <!-- Right Column: Contact Form -->
+                        <div class="col-span-1 md:col-span-4 mt-12 md:mt-0 relative flex flex-col justify-end bg-surface-container p-6 border border-white/10">
+                                <form action="https://formspree.io/f/maewbybz" method="POST" class="flex flex-col gap-4 w-full">
+                                        <div>
+                                                <label for="name" class="font-label-mono text-[10px] uppercase text-on-surface-variant block mb-1">Name</label>
+                                                <input type="text" id="name" name="name" required class="w-full bg-background border border-white/10 px-4 py-2 text-on-background focus:outline-none focus:border-primary transition-colors font-body-sm">
+                                        </div>
+                                        <div>
+                                                <label for="email" class="font-label-mono text-[10px] uppercase text-on-surface-variant block mb-1">Email</label>
+                                                <input type="email" id="email" name="email" required class="w-full bg-background border border-white/10 px-4 py-2 text-on-background focus:outline-none focus:border-primary transition-colors font-body-sm">
+                                        </div>
+                                        <div>
+                                                <label for="message" class="font-label-mono text-[10px] uppercase text-on-surface-variant block mb-1">Message</label>
+                                                <textarea id="message" name="message" rows="4" required class="w-full bg-background border border-white/10 px-4 py-2 text-on-background focus:outline-none focus:border-primary transition-colors font-body-sm resize-none"></textarea>
+                                        </div>
+                                        <button type="submit" class="mt-2 w-full bg-primary text-background font-label-mono uppercase py-3 hover:opacity-90 transition-opacity tracking-widest">SEND MESSAGE</button>
+                                </form>
+                        </div>
+                </div>
+        </section>
+
+        <!-- Footer / Copyright -->
+        <footer class="py-8 border-t border-white/10 text-center text-on-surface-variant font-label-mono text-xs uppercase tracking-widest max-w-container-max mx-auto px-5 w-full">
+                &copy; 2026 Prashant Thakur. All rights reserved.
+        </footer>
+
+        <script>
+                const btn = document.getElementById('mobile-menu-btn');
+                const menu = document.getElementById('mobile-menu');
+                const icon = btn.querySelector('.material-symbols-outlined');
+                const links = document.querySelectorAll('.mobile-link');
+
+                btn.addEventListener('click', () => {
+                        if (menu.classList.contains('hidden')) {
+                                menu.classList.remove('hidden');
+                                setTimeout(() => menu.classList.remove('opacity-0'), 10);
+                                icon.textContent = 'close';
+                                document.body.style.overflow = 'hidden';
+                        } else {
+                                menu.classList.add('opacity-0');
+                                setTimeout(() => menu.classList.add('hidden'), 300);
+                                icon.textContent = 'menu';
+                                document.body.style.overflow = 'auto';
+                        }
+                });
+
+                links.forEach(link => {
+                        link.addEventListener('click', () => {
+                                menu.classList.add('opacity-0');
+                                setTimeout(() => menu.classList.add('hidden'), 300);
+                                icon.textContent = 'menu';
+                                document.body.style.overflow = 'auto';
+                        });
+                });
+        </script>
+</body>
+
+</html>
